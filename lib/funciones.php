@@ -1,17 +1,18 @@
 <?php
 
-	function conectarse_pandora(){
-		if (!($link=mysqli_connect("localhost","root","Pandora")))  {
+	function conectarse_doscuatrotres(){
+		if (!($link=mysqli_connect("localhost","root","cavaliere")))  {
 		   echo "Error conectando al servidor.";
-		   exit();
+		   //exit();
 		   }
-		if (!mysqli_select_db($link,"pandora"))  {
+		if (!mysqli_select_db($link,"turismo_profesionales"))  {
 		   echo "Error seleccionando la base de datos.";
-		   exit();
+		   //exit();
 		   }
 		   mysqli_set_charset($link,'utf8');
 		return $link;
 	}
+
 
 	function mysqli_result($res,$row,$col){
     $numrows = mysqli_num_rows($res);

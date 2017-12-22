@@ -63,6 +63,7 @@
                     	<li><a href="../mod_administracion/profesiones.php">Nuevo Tipo de Profesión</a></li>
                         <li><a href="../mod_administracion/examenes.php">Nuevo Tipo de Exámen</a></li>
 						<li><a href="../mod_administracion/lugares_trabajos.php">Nuevo Lugar de Trabajo</a></li>
+						<li><a href="../mod_profesionales/personas_grilla.php">Modificar Persona</a></li>
 					  </ul>
 				</li>
 

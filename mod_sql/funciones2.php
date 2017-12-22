@@ -382,6 +382,20 @@ function buscar_empresas_profesional($fk_id_persona, $fk_id_profesion) {
 	return $empresas;
 	
 }
+
+function sql_buscar_barrios()
+{
+	$db = Conexion();
+
+	$sql ="SELECT *
+		   FROM `barrios` ORDER BY `concepto`
+		  ";
+
+	$barrios = mysqli_query($db,$sql);
+
+	return $barrios;
+}
+
 // --------------------- Funciones Utiles --------------------------
 
 function existe_idioma($array, $keySearch)
